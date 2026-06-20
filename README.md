@@ -1,5 +1,7 @@
 # Dev, AI & Product — Concept Dictionary
 
+**🌐 Live:** [concept-dictionary.vercel.app](https://concept-dictionary.vercel.app)
+
 An interactive web app for defining, saving, and exploring technical, AI, and product concepts.
 Comes pre-loaded with **64 seeded concepts** across categories like Frontend, ML, LLMs, Product Strategy, Growth, Metrics, and more.
 
