@@ -1,0 +1,19 @@
+node_modules
+dist
+dist-ssr
+.DS_Store
+*.local
+.vscode/*
+!.vscode/extensions.json
+.env
+.env.local
+.env.*.local
+*.log
+
+.vercel
+
+# Local Claude Code config (don't share)
+.claude/
+
+# Obsolete artifact-style prototype (kept on disk as a reference only)
+dev-ai-product-dictionary.tsx

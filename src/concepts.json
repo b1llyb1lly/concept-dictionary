@@ -1,0 +1,2134 @@
+[
+  {
+    "term": "0-to-1 vs. 1-to-n",
+    "category": "Product Strategy",
+    "what": "0-to-1 describes building something entirely new that doesn't yet exist — inventing a product, market, or category from scratch. 1-to-n describes scaling or replicating something that already works, growing adoption, expanding to new segments, or iterating on a proven base.",
+    "why": "The distinction matters because the two modes require fundamentally different skills, team structures, risk tolerances, and success metrics — conflating them leads to applying the wrong playbook, such as running growth experiments on a product that hasn't found product-market fit yet.",
+    "example": "A startup building the first AI-powered legal contract tool is doing 0-to-1 work — validating that the problem, solution, and willingness to pay all exist. Once they have 50 paying customers and a repeatable sales motion, hiring a sales team to expand into 10 new verticals is 1-to-n.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Venture Capital",
+      "Entrepreneurship",
+      "Innovation Strategy"
+    ],
+    "related": {
+      "platforms": [],
+      "domains": [
+        "Growth",
+        "Agile & Process",
+        "User Research"
+      ],
+      "concepts": [
+        "product-market fit",
+        "go-to-market strategy",
+        "innovation vs. execution",
+        "crossing the chasm",
+        "jobs-to-be-done",
+        "growth loops"
+      ]
+    }
+  },
+  {
+    "term": "90-9-1 Rule",
+    "category": "Product Strategy",
+    "what": "An empirical pattern in online communities where roughly 90% of users only consume content, 9% contribute occasionally, and 1% are responsible for the vast majority of active content creation.",
+    "why": "It helps product managers set realistic engagement benchmarks, avoid over-indexing on vocal minorities, and design features that lower the barrier for the 9% to contribute more — since even small shifts there have outsized impact.",
+    "example": "A SaaS forum has 100,000 registered users. Per the rule, expect ~1,000 power users driving most posts and answers, ~9,000 occasionally upvoting or commenting, and ~90,000 who only read. Growth efforts should target converting lurkers in the 90% into occasional contributors.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "User Research",
+      "Growth",
+      "Metrics & Analytics"
+    ],
+    "related": {
+      "platforms": [
+        "Reddit",
+        "Wikipedia",
+        "Stack Overflow",
+        "Discourse"
+      ],
+      "domains": [
+        "Community Management",
+        "Growth",
+        "Engagement Design"
+      ],
+      "concepts": [
+        "Participation Inequality",
+        "Network Effects",
+        "Creator Economy",
+        "DAU/MAU Ratio",
+        "Lurker Behavior"
+      ]
+    }
+  },
+  {
+    "term": "Acceptance Criteria",
+    "category": "Agile & Process",
+    "what": "Acceptance criteria are the specific, pre-agreed conditions a feature or user story must satisfy for stakeholders to consider it complete and ready to ship. They define the boundaries of a piece of work in clear, testable terms.",
+    "why": "They prevent ambiguity between developers, designers, and product managers by aligning everyone on what 'done' actually means before work begins, reducing rework and failed QA cycles.",
+    "example": "User story: 'As a user, I want to reset my password.' Acceptance criteria: (1) A reset link is sent within 60 seconds of request. (2) The link expires after 24 hours. (3) After a successful reset, the user is redirected to the login page. (4) An error message appears if the email is not found in the system.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Jira",
+        "Linear",
+        "Notion",
+        "Shortcut",
+        "Azure DevOps"
+      ],
+      "domains": [
+        "Agile & Scrum",
+        "QA & Testing",
+        "Product Requirements",
+        "Sprint Planning"
+      ],
+      "concepts": [
+        "User Stories",
+        "Definition of Done",
+        "Behavior-Driven Development (BDD)",
+        "Test Cases",
+        "Story Points"
+      ]
+    }
+  },
+  {
+    "term": "Activation Loop Design",
+    "category": "Product Strategy",
+    "what": "A framework for designing the sequence of steps and triggers that move a new user from sign-up to their first meaningful success with a product — the 'aha moment' — and then back into the product repeatedly.",
+    "why": "A well-designed activation loop directly improves retention and reduces churn by ensuring users quickly experience real value, making them far more likely to become long-term, paying customers.",
+    "example": "A project management tool identifies that users who create their first task AND invite one teammate within 48 hours retain at 3x the rate of those who don't. The activation loop is redesigned: onboarding flow forces task creation in step 2, then surfaces an 'Invite your team' prompt immediately after — forming a reinforcing cycle each time a new teammate joins and creates tasks of their own.",
+    "depth": "advanced",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Amplitude",
+        "Mixpanel",
+        "Pendo",
+        "Appcues",
+        "Braze"
+      ],
+      "domains": [
+        "Growth Engineering",
+        "Onboarding Design",
+        "Behavioral Product Design",
+        "Retention Strategy"
+      ],
+      "concepts": [
+        "Aha Moment",
+        "North Star Metric",
+        "Habit Loop",
+        "User Onboarding",
+        "Retention Curve"
+      ]
+    }
+  },
+  {
+    "term": "Advisory Council vs. Product Council vs. Beta Cohort vs. Early Access",
+    "category": "Product Strategy",
+    "what": "Four distinct customer engagement structures: an advisory council is a small group of senior stakeholders (often executives) who provide strategic input and market perspective; a product council is a cross-functional internal or mixed group that governs product direction and prioritization; a beta cohort is a controlled group of real users who test pre-release features in a live environment and report bugs or usability issues; and early access is a broader, often self-selected group given pre-GA access to a feature or product, typically with lighter feedback requirements.",
+    "why": "Choosing the right structure determines the quality and type of signal you receive — advisory councils surface strategic and market fit signals, product councils align internal stakeholders, beta cohorts yield dense qualitative and quantitative usage data, and early access programs build community momentum and surface edge cases at scale. Conflating them leads to wrong audiences giving wrong feedback at the wrong fidelity.",
+    "example": "A SaaS company launching an AI reporting feature runs all four in parallel: the advisory council (5 Fortune 500 CIOs) validates the business case; the product council (PM, engineering lead, sales, CS) sets the launch criteria; the beta cohort (20 power users recruited by CS) runs structured two-week sprints with weekly debriefs; the early access program opens a waitlist to 2,000 customers who get access in exchange for in-app feedback surveys.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "User Research",
+      "Growth",
+      "Agile & Process"
+    ],
+    "related": {
+      "platforms": [
+        "Productboard",
+        "Pendo",
+        "Sprig",
+        "Notion"
+      ],
+      "domains": [
+        "User Research",
+        "Growth",
+        "Agile & Process"
+      ],
+      "concepts": [
+        "Customer Discovery",
+        "Dogfooding",
+        "Design Partners",
+        "Lighthouse Customers",
+        "GA (General Availability)",
+        "Closed Beta vs. Open Beta",
+        "Design Partner Program",
+        "Voice of the Customer (VoC)"
+      ]
+    }
+  },
+  {
+    "term": "AI-native vs. AI-enabled",
+    "category": "Product Strategy",
+    "what": "AI-native products are designed from the ground up with AI as the core value-delivery mechanism, while AI-enabled products are existing workflows or software that have had AI features layered on top to enhance or automate specific tasks.",
+    "why": "The distinction shapes product architecture, pricing, go-to-market, and competitive moat; AI-native products can rethink UX entirely around model capabilities, whereas AI-enabled products risk becoming commoditized if the underlying AI feature becomes a standard expectation across incumbents.",
+    "example": "Cursor is AI-native — the entire IDE experience is structured around an LLM co-pilot and would not exist meaningfully without AI. Microsoft Word with Copilot is AI-enabled — the word processor existed for decades and AI was added as a productivity layer.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Architecture",
+      "LLMs & Gen AI"
+    ],
+    "related": {
+      "platforms": [
+        "Cursor",
+        "Perplexity",
+        "GitHub Copilot",
+        "Microsoft 365 Copilot"
+      ],
+      "domains": [
+        "Product Strategy",
+        "LLMs & Gen AI",
+        "Architecture"
+      ],
+      "concepts": [
+        "product-market fit",
+        "defensible moat",
+        "workflow automation",
+        "zero-to-one product design",
+        "LLM orchestration"
+      ]
+    }
+  },
+  {
+    "term": "API Design",
+    "category": "API/Protocol",
+    "what": "The process of defining how software components communicate — including endpoints, request/response shapes, authentication, versioning, and error handling — so that other developers can reliably integrate with your service.",
+    "why": "A well-designed API is a product in itself: it determines how easy it is for teams, partners, or third parties to build on your system, and poor design choices are expensive to undo once clients depend on them.",
+    "example": "Instead of a vague POST /doStuff endpoint, a well-designed API uses POST /orders to create an order, returns a 201 status with the created resource, uses consistent snake_case field names, and documents error responses like 422 Unprocessable Entity with a machine-readable reason field.",
+    "depth": "intermediate",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Swagger/OpenAPI",
+        "Postman",
+        "AWS API Gateway",
+        "Apigee",
+        "Stoplight"
+      ],
+      "domains": [
+        "Backend development",
+        "Developer experience (DX)",
+        "Systems integration",
+        "Platform engineering"
+      ],
+      "concepts": [
+        "REST",
+        "GraphQL",
+        "gRPC",
+        "API versioning",
+        "Idempotency"
+      ]
+    }
+  },
+  {
+    "term": "Artificial General Intelligence (AGI)",
+    "category": "LLMs & Gen AI",
+    "what": "AGI refers to a hypothetical AI system that can understand, learn, and apply intelligence across any intellectual task a human can perform — not just the narrow tasks it was trained on. Unlike today's AI, it would generalize reasoning and knowledge fluidly to entirely new domains.",
+    "why": "It matters as the long-term goal many AI labs are working toward, shaping research priorities, safety investments, and policy debates today. Understanding what AGI means (and how far we are from it) helps contextualize current AI capabilities and limitations.",
+    "example": "A narrow AI like a chess engine beats grandmasters but can't write a poem or diagnose a disease. An AGI could do all three, then also learn plumbing from a manual it has never seen — applying genuine reasoning rather than pattern-matching on training data.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "OpenAI",
+        "DeepMind",
+        "Anthropic",
+        "Google DeepMind",
+        "Meta AI"
+      ],
+      "domains": [
+        "AI safety",
+        "cognitive science",
+        "AI alignment",
+        "philosophy of mind"
+      ],
+      "concepts": [
+        "narrow AI",
+        "superintelligence",
+        "AI alignment",
+        "emergent capabilities",
+        "transfer learning"
+      ]
+    }
+  },
+  {
+    "term": "Churn",
+    "category": "Metrics & Analytics",
+    "what": "Churn is the rate at which customers stop using a product or cancel a subscription over a given time period. It is typically expressed as a percentage of total customers lost within a month, quarter, or year.",
+    "why": "Churn directly erodes recurring revenue and signals product-market fit problems. Reducing churn is often more cost-effective than acquiring new customers, making it a critical health metric for subscription and SaaS businesses.",
+    "example": "A SaaS company starts January with 500 customers and loses 25 by month-end. Monthly churn rate = 25 / 500 = 5%. At that rate, roughly half the customer base turns over in a year — a serious retention problem that would prompt investigation into onboarding, support quality, or pricing.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Dev"
+    ],
+    "related": {
+      "platforms": [
+        "Stripe",
+        "ChartMogul",
+        "Mixpanel",
+        "Amplitude",
+        "Salesforce"
+      ],
+      "domains": [
+        "Subscription & SaaS metrics",
+        "Customer success",
+        "Revenue operations",
+        "Growth strategy"
+      ],
+      "concepts": [
+        "Retention rate",
+        "Customer Lifetime Value (LTV)",
+        "Net Revenue Retention (NRR)",
+        "Cohort analysis",
+        "Involuntary churn"
+      ]
+    }
+  },
+  {
+    "term": "CLI",
+    "category": "Tooling",
+    "what": "A Command-Line Interface (CLI) is a text-based way to interact with a program or operating system by typing commands into a terminal or shell, rather than using a graphical interface.",
+    "why": "CLIs are faster and more scriptable than GUIs, making them essential for automation, DevOps pipelines, developer tooling, and working on remote servers where no display is available.",
+    "example": "Instead of clicking through a UI to deploy code, a developer runs `git push heroku main` or `aws s3 sync ./dist s3://my-bucket` — one line that can be embedded in a CI/CD script and run thousands of times without human intervention.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "bash",
+        "zsh",
+        "PowerShell",
+        "Click (Python)",
+        "oclif (Node.js)"
+      ],
+      "domains": [
+        "Developer Tooling",
+        "DevOps & Automation",
+        "System Administration",
+        "Build Systems"
+      ],
+      "concepts": [
+        "shell scripting",
+        "stdin/stdout/stderr",
+        "environment variables",
+        "exit codes",
+        "REPL"
+      ]
+    }
+  },
+  {
+    "term": "Cohort Analysis",
+    "category": "Metrics & Analytics",
+    "what": "A method of grouping users by a shared characteristic or starting event — most commonly when they first signed up or made a purchase — and then tracking how that group behaves over time.",
+    "why": "It separates the signal of how a product change or time period affects a specific group from the noise of your overall growing (or shrinking) user base, making retention, churn, and engagement trends far more actionable.",
+    "example": "You notice overall DAU is flat despite adding 500 new users each week. A cohort analysis reveals that users who joined in January retain at 40% after 30 days, while users who joined in March retain at only 18% — pointing to a regression introduced in a February release rather than a general engagement problem.",
+    "depth": "intermediate",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Amplitude",
+        "Mixpanel",
+        "Looker",
+        "Google Analytics 4",
+        "Heap"
+      ],
+      "domains": [
+        "Product Analytics",
+        "Growth",
+        "Retention & Churn",
+        "Behavioral Analytics"
+      ],
+      "concepts": [
+        "Retention curves",
+        "Churn rate",
+        "DAU/MAU ratio",
+        "Funnel analysis",
+        "Segmentation"
+      ]
+    }
+  },
+  {
+    "term": "Cold Start Problem",
+    "category": "Machine Learning",
+    "what": "The cold start problem occurs when a recommendation or personalization system cannot make accurate predictions for new users, new items, or a newly launched system because there is insufficient historical interaction data to learn from.",
+    "why": "It directly impacts user experience at the most critical moment — onboarding — and can cause poor recommendations that drive early churn; solving it requires deliberate strategies like onboarding surveys, content-based fallbacks, or hybrid models.",
+    "example": "A new user signs up for Spotify and has zero listening history. Without a cold start strategy, the recommender has nothing to work with, so Spotify prompts the user to pick favorite genres and artists to bootstrap their taste profile before collaborative filtering can take over.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Product Strategy",
+      "LLMs & Gen AI"
+    ],
+    "related": {
+      "platforms": [
+        "Spotify",
+        "Netflix",
+        "Amazon",
+        "TikTok"
+      ],
+      "domains": [
+        "Recommender Systems",
+        "Personalization",
+        "Growth"
+      ],
+      "concepts": [
+        "Collaborative Filtering",
+        "Content-Based Filtering",
+        "Hybrid Recommender Systems",
+        "Exploration vs. Exploitation",
+        "User Onboarding",
+        "Sparse Data Problem",
+        "Matrix Factorization"
+      ]
+    }
+  },
+  {
+    "term": "Community-Led Growth",
+    "category": "Growth",
+    "what": "A go-to-market strategy where an engaged user community — forums, Slack groups, events, advocates — becomes the primary driver of acquisition, retention, and expansion rather than traditional sales or marketing motions.",
+    "why": "It reduces CAC by turning existing users into authentic evangelists, builds defensible network effects, and creates feedback loops that accelerate product improvement; it's especially powerful for developer tools and prosumer products where peer trust outweighs brand advertising.",
+    "example": "Figma grew largely through designers sharing files and inviting collaborators, spawning a community of plugin builders and template creators on the Figma Community hub — each shared resource became a viral acquisition loop that no paid campaign could replicate.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Product Strategy",
+      "Agile & Process"
+    ],
+    "related": {
+      "platforms": [
+        "Discord",
+        "Slack",
+        "GitHub",
+        "Circle",
+        "Discourse"
+      ],
+      "domains": [
+        "Product-Led Growth",
+        "Developer Relations",
+        "Brand Marketing"
+      ],
+      "concepts": [
+        "Network Effects",
+        "Viral Loops",
+        "Product-Led Growth (PLG)",
+        "Customer Advocacy",
+        "Developer Evangelism",
+        "Net Promoter Score (NPS)"
+      ]
+    }
+  },
+  {
+    "term": "Continuous Discovery",
+    "category": "Product Strategy",
+    "what": "A product development practice where teams conduct small, frequent customer research touchpoints on an ongoing basis rather than in large, infrequent research sprints. It embeds discovery work into the team's weekly rhythm alongside delivery.",
+    "why": "It ensures product decisions are grounded in current customer reality, reducing the risk of building the wrong thing and enabling faster course-correction as market or user needs shift.",
+    "example": "A product trio (PM, designer, engineer) interviews two customers every week while simultaneously shipping features, using each conversation to test assumptions about an upcoming roadmap item before committing to build it.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "User Research",
+      "Agile & Process"
+    ],
+    "related": {
+      "platforms": [
+        "Productboard",
+        "Dovetail",
+        "Maze",
+        "UserLeap"
+      ],
+      "domains": [
+        "User Research",
+        "Agile & Process",
+        "Growth"
+      ],
+      "concepts": [
+        "Opportunity Solution Tree",
+        "Jobs to Be Done",
+        "Dual-Track Agile",
+        "Assumption Testing",
+        "Product Trio",
+        "Continuous Delivery"
+      ]
+    }
+  },
+  {
+    "term": "Coverage vs. Accuracy vs. Freshness",
+    "category": "Metrics & Analytics",
+    "what": "Three competing data quality dimensions: coverage measures how completely a dataset represents the target population or feature space, accuracy measures how correct or error-free the data is, and freshness measures how up-to-date the data is relative to the real world it describes.",
+    "why": "No system can simultaneously maximize all three without tradeoffs — optimizing for freshness (e.g. real-time ingestion) often introduces accuracy errors, while high-accuracy pipelines with heavy validation tend to lag and reduce freshness; understanding which dimension your product decision or model needs most is a core design choice.",
+    "example": "A product recommendation engine pulling from a near-real-time clickstream has high freshness but noisy accuracy; a quarterly cleaned catalog has high accuracy but stale coverage of new SKUs. A search index might prioritize coverage and freshness for new documents at the cost of some accuracy in ranking signals.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Machine Learning",
+      "LLMs & Gen AI",
+      "Product Strategy",
+      "Database"
+    ],
+    "related": {
+      "platforms": [
+        "Elasticsearch",
+        "Snowflake",
+        "dbt",
+        "Apache Kafka",
+        "Pinecone"
+      ],
+      "domains": [
+        "MLOps",
+        "Data Engineering",
+        "Information Retrieval",
+        "RAG systems"
+      ],
+      "concepts": [
+        "data quality",
+        "recall vs. precision",
+        "ETL vs. ELT",
+        "data freshness SLA",
+        "ground truth labeling",
+        "retrieval-augmented generation",
+        "index staleness",
+        "data drift"
+      ]
+    }
+  },
+  {
+    "term": "Customer Acquisition Cost (CAC)",
+    "category": "Metrics & Analytics",
+    "what": "CAC is the total cost a business spends to acquire a single new customer, calculated by dividing total sales and marketing expenses over a period by the number of new customers gained in that same period.",
+    "why": "CAC is a foundational unit-economics metric that tells you whether your growth is sustainable — if your CAC exceeds the revenue a customer generates (LTV), you're losing money on every customer and the business model is broken.",
+    "example": "A SaaS startup spends $50,000 on marketing and $30,000 on sales salaries in Q1 and acquires 200 new customers. CAC = $80,000 / 200 = $400 per customer. If the average customer pays $50/month and churns after 18 months, LTV = $900, giving an LTV:CAC ratio of 2.25x.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Growth",
+      "Product Strategy"
+    ],
+    "related": {
+      "platforms": [
+        "Salesforce",
+        "HubSpot",
+        "Google Ads",
+        "Meta Ads Manager",
+        "Stripe"
+      ],
+      "domains": [
+        "Growth",
+        "Product Strategy",
+        "Agile & Process"
+      ],
+      "concepts": [
+        "Lifetime Value (LTV)",
+        "LTV:CAC Ratio",
+        "Payback Period",
+        "Churn Rate",
+        "Monthly Recurring Revenue (MRR)",
+        "Conversion Rate",
+        "Attribution Modeling"
+      ]
+    }
+  },
+  {
+    "term": "Customer Data Platform (CDP)",
+    "category": "Product Strategy",
+    "what": "A CDP is a centralized system that collects, unifies, and persists first-party customer data from multiple sources into a single, addressable customer profile. Unlike a data warehouse, it is purpose-built for marketing and product activation use cases.",
+    "why": "CDPs eliminate data silos, enabling personalization, segmentation, and cross-channel orchestration at scale — critical when teams need a consistent, real-time view of the customer to drive retention, conversion, and lifecycle campaigns.",
+    "example": "A retail company feeds clickstream data, purchase history, and email engagement into a CDP like Segment or mParticle. The CDP stitches these into unified profiles, allowing the marketing team to build a segment of 'high-LTV users who haven't purchased in 60 days' and sync that audience to Google Ads and Braze.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Metrics & Analytics",
+      "Growth"
+    ],
+    "related": {
+      "platforms": [
+        "Segment",
+        "mParticle",
+        "Tealium",
+        "Treasure Data",
+        "Salesforce Data Cloud",
+        "Lytics",
+        "RudderStack"
+      ],
+      "domains": [
+        "Marketing Technology",
+        "Growth",
+        "Data Engineering",
+        "Metrics & Analytics"
+      ],
+      "concepts": [
+        "Identity Resolution",
+        "First-Party Data",
+        "Event Streaming",
+        "Audience Segmentation",
+        "Customer 360",
+        "Data Warehouse",
+        "Reverse ETL",
+        "Event Schema Governance"
+      ]
+    }
+  },
+  {
+    "term": "Customer Lifetime Value (CLV)",
+    "category": "Metrics & Analytics",
+    "what": "Customer Lifetime Value is the total net revenue a business can expect to earn from a single customer account over the entire duration of their relationship. It combines average purchase value, purchase frequency, and customer lifespan into a single predictive metric.",
+    "why": "CLV helps teams decide how much to spend acquiring and retaining customers — if your CLV is $500, spending $400 on acquisition leaves little margin, while a CLV of $5,000 makes that same spend highly profitable.",
+    "example": "A SaaS company sees that customers on its annual plan churn after an average of 3 years at $1,200/year, giving a CLV of $3,600. The growth team sets a target CAC ceiling of $1,200 — a 3:1 CLV:CAC ratio — and prioritizes retention campaigns for at-risk annual subscribers.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "E-commerce",
+      "SaaS",
+      "Subscription Businesses",
+      "Financial Services"
+    ],
+    "related": {
+      "platforms": [
+        "Salesforce",
+        "Segment",
+        "Amplitude",
+        "Mixpanel",
+        "Stripe",
+        "Looker"
+      ],
+      "domains": [
+        "Growth",
+        "Product Strategy",
+        "Marketing Analytics",
+        "Finance"
+      ],
+      "concepts": [
+        "Customer Acquisition Cost (CAC)",
+        "Churn Rate",
+        "Net Revenue Retention (NRR)",
+        "Cohort Analysis",
+        "Average Revenue Per User (ARPU)",
+        "Payback Period",
+        "LTV:CAC Ratio"
+      ]
+    }
+  },
+  {
+    "term": "Data Enrichment",
+    "category": "Product Strategy",
+    "what": "Data enrichment is the process of enhancing raw or incomplete data by appending additional information from external or internal sources, such as adding firmographic details to a lead record or joining behavioral signals to a user profile.",
+    "why": "Richer data improves the accuracy of segmentation, personalization, lead scoring, and machine learning models, enabling teams to make better decisions and deliver more relevant experiences without collecting everything from scratch.",
+    "example": "A B2B SaaS company captures only an email address at signup, then uses Clearbit to automatically append the user's company name, industry, employee count, and estimated revenue — allowing the sales team to prioritize enterprise leads without any manual research.",
+    "depth": "intermediate",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Clearbit",
+        "ZoomInfo",
+        "Segment",
+        "Fivetran",
+        "Snowflake"
+      ],
+      "domains": [
+        "Machine Learning",
+        "Metrics & Analytics",
+        "Growth",
+        "Database"
+      ],
+      "concepts": [
+        "ETL/ELT",
+        "Customer Data Platform (CDP)",
+        "Feature Engineering",
+        "Lead Scoring",
+        "Identity Resolution",
+        "Data Quality"
+      ]
+    }
+  },
+  {
+    "term": "Data Flywheel",
+    "category": "Product Strategy",
+    "what": "A self-reinforcing growth loop where more users generate more data, which improves a product's model or algorithm, which attracts more users. Each cycle compounds the advantage, making the product progressively harder to displace.",
+    "why": "It creates a durable, compounding competitive moat — especially in AI/ML products — because the advantage is embedded in proprietary data accumulation rather than just features or price.",
+    "example": "Google Maps improves routing accuracy as more drivers use it and passively contribute real-time traffic data, which makes routing better, attracting more users who contribute even more data.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Machine Learning",
+      "Growth",
+      "LLMs & Gen AI"
+    ],
+    "related": {
+      "platforms": [
+        "Google",
+        "Uber",
+        "Amazon",
+        "OpenAI"
+      ],
+      "domains": [
+        "Product Strategy",
+        "Growth",
+        "Machine Learning",
+        "LLMs & Gen AI"
+      ],
+      "concepts": [
+        "network effects",
+        "compounding moats",
+        "RLHF",
+        "active learning",
+        "virtuous cycle",
+        "proprietary data advantage"
+      ]
+    }
+  },
+  {
+    "term": "Data Governance",
+    "category": "Database",
+    "what": "Data governance is the set of policies, roles, processes, and standards that define how an organization manages, protects, and uses its data assets. It establishes who can access what data, how data quality is maintained, and how data complies with regulations.",
+    "why": "Without it, organizations end up with inconsistent data definitions, compliance violations (GDPR, HIPAA), and analytics built on unreliable data — making it foundational for any company treating data as a strategic asset.",
+    "example": "A healthcare company implements data governance by assigning a 'data steward' to each domain (e.g., patient records, billing). The steward defines that 'patient_id' is always a UUID, never reused, masked in non-production environments, and only accessible to roles with PHI clearance — enforced in their data catalog (e.g., Collibra) and column-level permissions in Snowflake.",
+    "depth": "advanced",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Collibra",
+        "Alation",
+        "Apache Atlas",
+        "Snowflake",
+        "dbt"
+      ],
+      "domains": [
+        "Data Engineering",
+        "Compliance & Regulatory",
+        "Data Quality",
+        "Enterprise Architecture"
+      ],
+      "concepts": [
+        "Data Catalog",
+        "Data Lineage",
+        "Master Data Management (MDM)",
+        "Role-Based Access Control (RBAC)",
+        "Data Stewardship"
+      ]
+    }
+  },
+  {
+    "term": "Data Network Effects",
+    "category": "Product Strategy",
+    "what": "A feedback loop where a product becomes more valuable as it accumulates more data, which in turn attracts more users, who generate even more data. Unlike traditional network effects (value from more users), data network effects derive value from the intelligence or personalization improvements the data enables.",
+    "why": "It creates a compounding competitive moat: companies that capture this loop early become increasingly difficult to displace because their models, recommendations, or predictions improve faster than late entrants who lack the data volume.",
+    "example": "Spotify collects listening behavior from 600M users, which trains better recommendation algorithms, which increases user satisfaction and retention, which brings in more users, which generates more behavioral data — each cycle widening the gap over a new music app starting from scratch.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Machine Learning",
+      "Growth",
+      "Architecture"
+    ],
+    "related": {
+      "platforms": [
+        "Spotify",
+        "Google Search",
+        "Waze",
+        "Netflix",
+        "Amazon"
+      ],
+      "domains": [
+        "Growth",
+        "Machine Learning",
+        "MLOps",
+        "Metrics & Analytics"
+      ],
+      "concepts": [
+        "Network Effects",
+        "Flywheel Effect",
+        "Moat",
+        "Personalization",
+        "Recommendation Systems",
+        "Cold Start Problem",
+        "Winner-Take-All Markets"
+      ]
+    }
+  },
+  {
+    "term": "Data Quality",
+    "category": "Metrics & Analytics",
+    "what": "Data quality refers to the degree to which data is accurate, complete, consistent, timely, and fit for its intended use. It encompasses dimensions like validity, uniqueness, and integrity across a dataset or pipeline.",
+    "why": "Poor data quality leads to flawed analytics, unreliable ML models, and bad business decisions; ensuring high data quality is foundational to any data-driven product or system.",
+    "example": "An e-commerce platform runs a daily job that checks customer records for missing email addresses, duplicate order IDs, and purchase amounts outside a valid range — flagging or quarantining bad rows before they reach the reporting dashboard.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "dbt",
+        "Great Expectations",
+        "Monte Carlo",
+        "Soda",
+        "Apache Griffin"
+      ],
+      "domains": [
+        "Data Engineering",
+        "MLOps",
+        "Business Intelligence",
+        "Data Governance"
+      ],
+      "concepts": [
+        "Data Lineage",
+        "Data Observability",
+        "Schema Validation",
+        "ETL/ELT",
+        "Master Data Management",
+        "Data Contracts",
+        "Anomaly Detection"
+      ]
+    }
+  },
+  {
+    "term": "Defensible Moat",
+    "category": "Product Strategy",
+    "what": "A defensible moat is a durable competitive advantage that makes it difficult for rivals to erode a company's market position over time. It is the structural reason customers stay and competitors struggle to replicate your value.",
+    "why": "Identifying and widening your moat determines long-term business viability; without one, competitors can commoditize your product and compete purely on price, eroding margins and retention.",
+    "example": "Notion's moat combines high switching costs (deeply embedded workflows and templates) with network effects (shared team workspaces and public template libraries), making it costly for teams to migrate even when alternatives offer similar features.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Venture Capital",
+      "Corporate Strategy",
+      "Competitive Intelligence"
+    ],
+    "related": {
+      "platforms": [
+        "Salesforce",
+        "Shopify",
+        "Figma"
+      ],
+      "domains": [
+        "Growth",
+        "Product Strategy",
+        "Metrics & Analytics"
+      ],
+      "concepts": [
+        "Network Effects",
+        "Switching Costs",
+        "Lock-in",
+        "Economies of Scale",
+        "Brand Equity",
+        "Data Flywheel",
+        "Proprietary Data Advantage"
+      ]
+    }
+  },
+  {
+    "term": "Deployment vs. Production",
+    "category": "DevOps",
+    "what": "Deployment is the act or process of releasing software to an environment; Production is the live environment where real users interact with the software. Deployment is a verb (something you do); Production is a noun (a place your code lives).",
+    "why": "Conflating the two leads to miscommunication — you can deploy to staging, QA, or production. Knowing the distinction helps teams discuss risk precisely: deploying is the action you control, and production is where mistakes have real consequences.",
+    "example": "A team runs 'git push heroku main' — that is a deployment. If Heroku is configured as their production environment, the code is now in production. But if they pushed to a staging app first, they deployed without touching production.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Heroku",
+        "AWS CodeDeploy",
+        "GitHub Actions",
+        "Kubernetes",
+        "Vercel"
+      ],
+      "domains": [
+        "Release Engineering",
+        "Site Reliability Engineering",
+        "CI/CD",
+        "Environment Management"
+      ],
+      "concepts": [
+        "Staging Environment",
+        "Blue-Green Deployment",
+        "Continuous Delivery",
+        "Rollback",
+        "Feature Flags"
+      ]
+    }
+  },
+  {
+    "term": "Early Adopter Strategy",
+    "category": "Product Strategy",
+    "what": "A go-to-market approach where a product is deliberately targeted at a small segment of enthusiastic, risk-tolerant users who are eager to try new solutions before the mainstream market is ready to engage.",
+    "why": "Early adopters provide high-signal feedback, generate word-of-mouth credibility, and help validate product-market fit with lower marketing spend — making them essential for de-risking a product before scaling.",
+    "example": "Slack initially targeted small, tech-forward teams at companies like Rdio rather than launching to enterprises. These early adopters tolerated rough edges, gave candid feedback, and became internal champions who later pushed Slack into larger organizations.",
+    "depth": "intermediate",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "ProductBoard",
+        "Typeform",
+        "Notion",
+        "Intercom",
+        "Pendo"
+      ],
+      "domains": [
+        "Go-to-Market Strategy",
+        "Product-Market Fit",
+        "Growth & Adoption",
+        "Customer Development"
+      ],
+      "concepts": [
+        "Technology Adoption Lifecycle",
+        "Beachhead Market",
+        "Product-Market Fit",
+        "Chasm Crossing",
+        "Design Partners"
+      ]
+    }
+  },
+  {
+    "term": "Economies of Scale",
+    "category": "Product Strategy",
+    "what": "The cost advantages a business gains as its output increases, because fixed costs are spread over more units and operational efficiencies improve with volume. In short: the more you produce or serve, the cheaper each unit becomes.",
+    "why": "Understanding economies of scale helps product and business leaders make pricing, infrastructure, and growth decisions — knowing when scaling up lowers per-unit costs enough to justify investment or undercut competitors.",
+    "example": "A SaaS company pays $100k/month for cloud infrastructure whether it has 1,000 or 10,000 customers. At 1,000 customers that's $100/customer; at 10,000 it's $10/customer — the fixed cost is diluted, improving margins without changing the product.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Manufacturing",
+      "Economics",
+      "Supply Chain"
+    ],
+    "related": {
+      "platforms": [],
+      "domains": [
+        "General CS",
+        "Architecture",
+        "MLOps"
+      ],
+      "concepts": [
+        "Unit Economics",
+        "Marginal Cost",
+        "Network Effects",
+        "Vertical Integration",
+        "Operating Leverage"
+      ]
+    }
+  },
+  {
+    "term": "Enterprise Motion",
+    "category": "Product Strategy",
+    "what": "Enterprise motion refers to the go-to-market and growth strategy a company uses to acquire, expand, and retain large enterprise customers, typically involving longer sales cycles, procurement processes, security reviews, and dedicated account management.",
+    "why": "It matters because selling to enterprises requires fundamentally different organizational design, pricing models, and product capabilities (SSO, audit logs, compliance, SLAs) than selling to SMBs or individual users.",
+    "example": "A SaaS startup initially grows via product-led growth (PLG) among individual developers, then builds an 'enterprise motion' by adding a dedicated sales team, SOC 2 compliance, role-based access controls, and volume licensing to land Fortune 500 procurement teams.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Sales Strategy",
+      "Revenue Operations"
+    ],
+    "related": {
+      "platforms": [
+        "Salesforce",
+        "Gong",
+        "Outreach"
+      ],
+      "domains": [
+        "Growth",
+        "Agile & Process",
+        "Metrics & Analytics"
+      ],
+      "concepts": [
+        "Product-Led Growth (PLG)",
+        "Sales-Led Growth (SLG)",
+        "Land and Expand",
+        "Champion Selling",
+        "ICP (Ideal Customer Profile)",
+        "Revenue Operations"
+      ]
+    }
+  },
+  {
+    "term": "First-Party vs. Third-Party Data",
+    "category": "Metrics & Analytics",
+    "what": "First-party data is information a company collects directly from its own users or customers (e.g., purchase history, site behavior, CRM records). Third-party data is aggregated and purchased from external data brokers who collected it from sources unrelated to your business.",
+    "why": "The distinction drives data strategy decisions around privacy compliance, targeting accuracy, and resilience — especially as third-party cookies are deprecated and regulations like GDPR and CCPA tighten, making first-party data a strategic asset.",
+    "example": "An e-commerce brand uses first-party data (a user's past purchases on their site) to recommend products via email. They previously also bought third-party audience segments from a data broker to run prospecting ads, but now invest in a loyalty program to grow their first-party data instead.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Growth",
+      "Product Strategy",
+      "Security"
+    ],
+    "related": {
+      "platforms": [
+        "Google Analytics",
+        "Segment",
+        "Salesforce",
+        "LiveRamp",
+        "Meta Ads Manager"
+      ],
+      "domains": [
+        "Growth",
+        "Product Strategy",
+        "User Research"
+      ],
+      "concepts": [
+        "second-party data",
+        "zero-party data",
+        "cookie deprecation",
+        "data clean rooms",
+        "CDP (Customer Data Platform)",
+        "GDPR",
+        "CCPA",
+        "identity resolution"
+      ]
+    }
+  },
+  {
+    "term": "Harness (AI)",
+    "category": "LLMs & Gen AI",
+    "what": "A structured wrapper or scaffolding layer that connects an AI model to inputs, tools, memory, and outputs so it can perform a task reliably — essentially the 'rig' that operationalizes a raw model into a working system.",
+    "why": "Raw LLMs respond to prompts but can't act autonomously; a harness wires in tool calls, retrieval, guardrails, and control flow so the model can complete multi-step real-world tasks with predictable behavior.",
+    "example": "An AI coding agent harness might: (1) receive a GitHub issue as input, (2) call a code-search tool to retrieve relevant files, (3) pass context + instructions to the LLM, (4) parse its output into a patch, and (5) run tests before committing — all orchestrated outside the model itself.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Dev — 'test harness' is a testing scaffold that drives a unit/module under controlled conditions, unrelated to AI"
+    ],
+    "related": {
+      "platforms": [
+        "LangChain",
+        "LlamaIndex",
+        "AutoGen",
+        "Semantic Kernel",
+        "CrewAI"
+      ],
+      "domains": [
+        "AI Agents",
+        "LLM Orchestration",
+        "MLOps",
+        "Prompt Engineering"
+      ],
+      "concepts": [
+        "agent loop",
+        "tool use / function calling",
+        "retrieval-augmented generation (RAG)",
+        "chain-of-thought prompting",
+        "guardrails"
+      ]
+    }
+  },
+  {
+    "term": "hooks",
+    "category": "Frontend",
+    "what": "Functions in React (and similar frameworks) that let you 'hook into' state, lifecycle, and other React features from functional components, without writing a class.",
+    "why": "Hooks replaced class-based patterns for managing component state and side effects, making code more reusable, composable, and easier to test.",
+    "example": "const [count, setCount] = useState(0); // useState is a hook that gives a functional component its own local state — calling setCount(1) re-renders with the new value.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Dev (Backend/General): 'hook' means an interception point in a system — e.g. Git hooks are scripts that run on commit/push events; webhook hooks are HTTP callbacks triggered by external events",
+      "Dev (WordPress/CMS): actions and filters called hooks let plugins inject or modify behavior at predefined points in the application lifecycle"
+    ],
+    "related": {
+      "platforms": [
+        "React",
+        "Preact",
+        "Vue Composition API",
+        "SolidJS",
+        "React Native"
+      ],
+      "domains": [
+        "Component-based UI",
+        "State management",
+        "Frontend architecture",
+        "Reactive programming"
+      ],
+      "concepts": [
+        "useState",
+        "useEffect",
+        "custom hooks",
+        "component lifecycle",
+        "closures"
+      ]
+    }
+  },
+  {
+    "term": "Human-in-the-Loop (HITL)",
+    "category": "MLOps",
+    "what": "A system design pattern where human judgment is incorporated at one or more stages of an automated or AI-driven pipeline — typically for labeling, validation, or decision approval. The human acts as a checkpoint rather than a passive observer.",
+    "why": "Critical when model confidence is low, stakes are high, or edge cases are frequent; it balances automation efficiency with human accountability and helps continuously improve model quality through feedback loops.",
+    "example": "A content moderation model auto-approves high-confidence predictions but routes ambiguous posts (confidence 40–75%) to a review queue where a human moderator makes the final call, and that decision is fed back as a training label.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Product Strategy",
+      "General CS",
+      "LLMs & Gen AI"
+    ],
+    "related": {
+      "platforms": [
+        "Scale AI",
+        "Labelbox",
+        "Amazon SageMaker Ground Truth",
+        "Mechanical Turk"
+      ],
+      "domains": [
+        "Active Learning",
+        "MLOps",
+        "AI Safety",
+        "Business Process Automation"
+      ],
+      "concepts": [
+        "Active Learning",
+        "Reinforcement Learning from Human Feedback (RLHF)",
+        "Confidence Thresholding",
+        "Data Labeling",
+        "AI Oversight",
+        "Automated Decision-Making"
+      ]
+    }
+  },
+  {
+    "term": "Hypothesis Testing",
+    "category": "Metrics & Analytics",
+    "what": "A statistical method for making decisions about a population by testing a claim (the null hypothesis) against sample data to determine whether observed results are likely due to chance. It produces a p-value that quantifies the probability of seeing the observed data if the null hypothesis were true.",
+    "why": "It gives product and data teams a rigorous, defensible framework for deciding whether a change (new feature, price adjustment, UI tweak) actually caused an improvement rather than appearing to do so by random variation.",
+    "example": "A product team ships a new checkout button color to 50% of users. They set H₀: conversion rate is unchanged. After collecting data, they get p=0.03. Since p < 0.05, they reject H₀ and conclude the color change likely improved conversions.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "User Research",
+      "Machine Learning",
+      "General CS"
+    ],
+    "related": {
+      "platforms": [
+        "Statsig",
+        "Optimizely",
+        "Amplitude",
+        "LaunchDarkly"
+      ],
+      "domains": [
+        "A/B Testing",
+        "Experimentation",
+        "Bayesian Inference"
+      ],
+      "concepts": [
+        "p-value",
+        "statistical significance",
+        "null hypothesis",
+        "Type I / Type II error",
+        "confidence interval",
+        "statistical power",
+        "sample size"
+      ]
+    }
+  },
+  {
+    "term": "Identity Resolution",
+    "category": "Product Strategy",
+    "what": "Identity resolution is the process of matching and unifying data about the same individual across multiple identifiers, devices, channels, or data sources into a single, persistent customer profile.",
+    "why": "It matters because most users interact with a product across multiple touchpoints and devices, and without resolving these into one identity, analytics are fragmented, personalization is degraded, and attribution is inaccurate.",
+    "example": "A user browses your site anonymously on mobile (cookie ID), later signs up with an email on desktop, and later logs in via a third-party SSO. Identity resolution links all three events to a single profile so their full journey is preserved and actionable.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Security",
+      "Machine Learning",
+      "Metrics & Analytics"
+    ],
+    "related": {
+      "platforms": [
+        "Segment",
+        "LiveRamp",
+        "Snowflake",
+        "mParticle",
+        "Amplitude"
+      ],
+      "domains": [
+        "Customer Data Platforms (CDPs)",
+        "Marketing Analytics",
+        "Fraud Detection",
+        "IAM"
+      ],
+      "concepts": [
+        "Customer 360",
+        "Probabilistic vs Deterministic Matching",
+        "Device Graph",
+        "Entity Resolution",
+        "Third-Party Cookie Deprecation",
+        "User Stitching"
+      ]
+    }
+  },
+  {
+    "term": "Jobs to Be Done (JTBD)",
+    "category": "Product Strategy",
+    "what": "A framework that reframes product thinking around the underlying 'job' a customer is trying to accomplish rather than the product itself or demographic attributes. The core idea: customers 'hire' products to make progress in a specific situation.",
+    "why": "It shifts teams away from building feature lists toward solving real human motivations, leading to more durable product decisions and better positioning.",
+    "example": "A project management tool discovers its users aren't 'hiring' it to track tasks — they're hiring it to reduce anxiety about dropping commitments. That insight reframes the core UX around visibility and reassurance rather than feature completeness.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "User Research",
+      "Agile & Process",
+      "Growth"
+    ],
+    "related": {
+      "platforms": [
+        "Productboard",
+        "Dovetail",
+        "Maze"
+      ],
+      "domains": [
+        "User Research",
+        "Product Strategy",
+        "Growth"
+      ],
+      "concepts": [
+        "Outcome-Driven Innovation",
+        "Customer Journey Mapping",
+        "Problem Framing",
+        "Switch Interviews",
+        "Value Proposition Design",
+        "Pain-Gain Map"
+      ]
+    }
+  },
+  {
+    "term": "JSON",
+    "category": "API/Protocol",
+    "what": "JSON (JavaScript Object Notation) is a lightweight, human-readable text format for representing structured data as key-value pairs, arrays, and nested objects.",
+    "why": "It is the de facto standard for data exchange between web clients and servers, configuration files, and APIs because it is easy to read, write, and parse in virtually every programming language.",
+    "example": "A REST API response for a user profile: {\"id\": 42, \"name\": \"Ada Lovelace\", \"roles\": [\"admin\", \"editor\"], \"address\": {\"city\": \"London\", \"country\": \"UK\"}}",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Node.js",
+        "Postman",
+        "PostgreSQL (JSONB)",
+        "Express.js",
+        "OpenAPI/Swagger"
+      ],
+      "domains": [
+        "Web APIs",
+        "Data serialization",
+        "Configuration management",
+        "Frontend-backend communication"
+      ],
+      "concepts": [
+        "REST API",
+        "XML",
+        "YAML",
+        "Serialization",
+        "Schema validation"
+      ]
+    }
+  },
+  {
+    "term": "LTV:CAC Ratio",
+    "category": "Metrics & Analytics",
+    "what": "The ratio of Customer Lifetime Value (LTV) to Customer Acquisition Cost (CAC), measuring how much revenue a customer generates over their lifetime relative to what it cost to acquire them.",
+    "why": "It is a core indicator of business model health and capital efficiency; a ratio below 1:1 means you lose money on every customer, while 3:1 is commonly cited as a benchmark for sustainable growth.",
+    "example": "A SaaS company spends $600 to acquire a customer (CAC) who pays $50/month, churns after 24 months, and has a 70% gross margin — giving an LTV of $840. The LTV:CAC ratio is 840/600 = 1.4, flagging that unit economics need improvement before scaling spend.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Growth",
+      "Product Strategy"
+    ],
+    "related": {
+      "platforms": [
+        "Stripe",
+        "Salesforce",
+        "HubSpot",
+        "Looker",
+        "Mixpanel"
+      ],
+      "domains": [
+        "Growth",
+        "Product Strategy",
+        "Agile & Process"
+      ],
+      "concepts": [
+        "Customer Lifetime Value (LTV)",
+        "Customer Acquisition Cost (CAC)",
+        "Churn Rate",
+        "Gross Margin",
+        "Payback Period",
+        "Net Revenue Retention (NRR)",
+        "Unit Economics"
+      ]
+    }
+  },
+  {
+    "term": "Network Effects",
+    "category": "Product Strategy",
+    "what": "Network effects occur when a product or service becomes more valuable as more people use it. The utility each user derives increases with the size of the user base.",
+    "why": "Understanding network effects is critical for product strategy because they create compounding competitive moats — once a platform reaches critical mass, it becomes extremely difficult for competitors to displace it.",
+    "example": "WhatsApp becomes more useful to you the more of your contacts are already on it. A messaging app with 2 billion users is exponentially more valuable than one with 2 million, even if the underlying technology is identical.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Economics",
+      "Marketplace Strategy",
+      "Platform Business"
+    ],
+    "related": {
+      "platforms": [
+        "Uber",
+        "Airbnb",
+        "LinkedIn",
+        "WhatsApp",
+        "Slack"
+      ],
+      "domains": [
+        "Growth",
+        "Architecture",
+        "General CS"
+      ],
+      "concepts": [
+        "Metcalfe's Law",
+        "Critical Mass",
+        "Platform Flywheels",
+        "Switching Costs",
+        "Cold Start Problem",
+        "Viral Coefficient",
+        "Two-Sided Marketplaces"
+      ]
+    }
+  },
+  {
+    "term": "Next.js",
+    "category": "Frontend",
+    "what": "A React-based web framework that adds server-side rendering, static site generation, file-based routing, and API routes on top of React, letting you build full-stack web apps in one project.",
+    "why": "It solves React's default client-only rendering limitations — improving SEO, initial load performance, and developer experience — while reducing the need to wire up a separate backend for common API needs.",
+    "example": "A product page at `pages/products/[id].tsx` can export `getStaticProps` to pre-render product data at build time, serving lightning-fast HTML to users and search crawlers, then hydrate into a fully interactive React app on the client.",
+    "depth": "intermediate",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Vercel",
+        "React",
+        "Turbopack",
+        "Prisma",
+        "Tailwind CSS"
+      ],
+      "domains": [
+        "Frontend Development",
+        "Full-Stack Web Development",
+        "JAMstack",
+        "Web Performance"
+      ],
+      "concepts": [
+        "Server-Side Rendering (SSR)",
+        "Static Site Generation (SSG)",
+        "React Server Components",
+        "Edge Functions",
+        "Incremental Static Regeneration (ISR)"
+      ]
+    }
+  },
+  {
+    "term": "Node.js",
+    "category": "Language/Runtime",
+    "what": "Node.js is a JavaScript runtime that lets you run JavaScript code outside of a browser, typically on a server. It uses an event-driven, non-blocking I/O model built on Chrome's V8 engine.",
+    "why": "It enables JavaScript developers to build fast, scalable backend services and APIs without learning a separate server-side language, and excels at handling many simultaneous connections with minimal overhead.",
+    "example": "A simple HTTP server in Node.js:\n\nconst http = require('http');\nhttp.createServer((req, res) => {\n  res.end('Hello, world!');\n}).listen(3000);",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Express.js",
+        "Fastify",
+        "NestJS",
+        "npm",
+        "Deno"
+      ],
+      "domains": [
+        "Backend development",
+        "API design",
+        "Serverless computing",
+        "Real-time applications"
+      ],
+      "concepts": [
+        "Event loop",
+        "Non-blocking I/O",
+        "CommonJS modules",
+        "npm ecosystem",
+        "Single-threaded concurrency"
+      ]
+    }
+  },
+  {
+    "term": "North Star Metric",
+    "category": "Product Strategy",
+    "what": "A single metric that best captures the core value your product delivers to customers and serves as the primary indicator of long-term business success. It acts as a focusing mechanism that aligns all teams around one measurable expression of product-market fit.",
+    "why": "It prevents teams from optimizing for vanity metrics or conflicting KPIs by giving everyone a shared definition of 'winning'; when the North Star Metric grows sustainably, it typically predicts revenue and retention growth.",
+    "example": "Spotify's North Star Metric is 'time spent listening.' A feature team debating whether to build a social sharing tool would ask: 'Does this increase time spent listening?' If not, it's deprioritized regardless of how cool it seems.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Growth",
+      "Metrics & Analytics",
+      "Agile & Process"
+    ],
+    "related": {
+      "platforms": [
+        "Amplitude",
+        "Mixpanel",
+        "Looker"
+      ],
+      "domains": [
+        "Growth",
+        "Metrics & Analytics",
+        "Product Strategy"
+      ],
+      "concepts": [
+        "OKRs",
+        "Input Metrics",
+        "Vanity Metrics",
+        "Product-Market Fit",
+        "AARRR Framework",
+        "Leading vs Lagging Indicators"
+      ]
+    }
+  },
+  {
+    "term": "p-value",
+    "category": "Metrics & Analytics",
+    "what": "A p-value is the probability of observing a result at least as extreme as the one measured, assuming the null hypothesis is true. It quantifies how surprising your data would be if there were actually no real effect.",
+    "why": "It is used in A/B testing and statistical experiments to decide whether an observed difference is likely genuine or just random chance, guiding product and business decisions.",
+    "example": "You run an A/B test on a checkout button color. The new variant shows a 4% lift in conversions. The resulting p-value is 0.03, meaning there is only a 3% chance of seeing a difference this large by chance alone — so at a 0.05 threshold, you ship the variant.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "General CS",
+      "Machine Learning",
+      "User Research"
+    ],
+    "related": {
+      "platforms": [
+        "Optimizely",
+        "LaunchDarkly",
+        "Google Optimize",
+        "Statsig"
+      ],
+      "domains": [
+        "Statistics",
+        "A/B Testing",
+        "Experimentation",
+        "Data Science"
+      ],
+      "concepts": [
+        "null hypothesis",
+        "statistical significance",
+        "confidence interval",
+        "Type I error",
+        "Type II error",
+        "statistical power",
+        "effect size"
+      ]
+    }
+  },
+  {
+    "term": "Pirate Metrics (AARRR Framework)",
+    "category": "Growth",
+    "what": "A funnel-based framework coined by Dave McClure that models the customer lifecycle across five stages: Acquisition, Activation, Retention, Referral, and Revenue.",
+    "why": "It gives product and growth teams a structured way to diagnose where users are dropping off and where to focus investment — instead of optimizing everything at once, you find the leakiest bucket and fix it first.",
+    "example": "A SaaS startup notices strong Acquisition (10k signups/month) but weak Activation (only 15% complete onboarding). Using AARRR, they prioritize improving the onboarding flow over running more ad campaigns.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Product Strategy",
+      "Metrics & Analytics"
+    ],
+    "related": {
+      "platforms": [
+        "Mixpanel",
+        "Amplitude",
+        "Segment",
+        "Heap"
+      ],
+      "domains": [
+        "Product Strategy",
+        "Metrics & Analytics",
+        "User Research"
+      ],
+      "concepts": [
+        "Funnel Analysis",
+        "North Star Metric",
+        "Cohort Analysis",
+        "Net Promoter Score (NPS)",
+        "Customer Lifetime Value (LTV)",
+        "Churn Rate",
+        "Product-Market Fit"
+      ]
+    }
+  },
+  {
+    "term": "Platform Flywheel",
+    "category": "Product Strategy",
+    "what": "A self-reinforcing growth loop where more users or suppliers on one side of a platform attract more participants on the other side, compounding value and making the platform increasingly hard to displace over time.",
+    "why": "Understanding your flywheel helps product and growth teams identify which investments will compound most — and where to focus early to create defensible network effects.",
+    "example": "Airbnb's flywheel: more hosts list properties → more destination options attract more guests → higher booking volume makes hosting more lucrative → more hosts join. Each revolution makes the next one faster.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Marketplace Strategy",
+      "Growth",
+      "Business Strategy"
+    ],
+    "related": {
+      "platforms": [
+        "Airbnb",
+        "Uber",
+        "Amazon Marketplace",
+        "App Store"
+      ],
+      "domains": [
+        "Growth",
+        "Architecture",
+        "Metrics & Analytics"
+      ],
+      "concepts": [
+        "Network Effects",
+        "Two-Sided Marketplace",
+        "Cold Start Problem",
+        "Moats",
+        "Virtuous Cycle",
+        "Switching Costs",
+        "Demand-Side Economies of Scale"
+      ]
+    }
+  },
+  {
+    "term": "PRD (Product Requirements Document)",
+    "category": "Product Strategy",
+    "what": "A PRD is a written document that defines what a product or feature should do, for whom, and why — covering goals, user needs, functional requirements, and success criteria before development begins.",
+    "why": "It aligns engineering, design, and business stakeholders on scope and intent before a single line of code is written, reducing costly misunderstandings and scope creep mid-build.",
+    "example": "A PRD for a password reset feature might specify: target users are existing customers who've forgotten credentials, the flow must complete in under 3 steps, a time-limited email link must expire in 15 minutes, and success is measured by a 20% drop in support tickets about locked accounts.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Notion",
+        "Confluence",
+        "Linear",
+        "Jira",
+        "Coda"
+      ],
+      "domains": [
+        "Product Management",
+        "Agile & Process",
+        "Stakeholder Alignment",
+        "Software Planning"
+      ],
+      "concepts": [
+        "User Stories",
+        "Acceptance Criteria",
+        "MRD (Market Requirements Document)",
+        "Technical Specification",
+        "Scope Definition"
+      ]
+    }
+  },
+  {
+    "term": "Problem-Solution Fit",
+    "category": "Product Strategy",
+    "what": "Problem-solution fit is the stage where a proposed solution demonstrably addresses a real, significant problem that a target audience actually has. It confirms that your solution concept is the right response to a validated problem before investing in building a full product.",
+    "why": "Achieving problem-solution fit before building reduces waste by ensuring you are not engineering an elegant answer to a question nobody is asking.",
+    "example": "A team discovers through 30 user interviews that freelancers struggle to chase unpaid invoices. They sketch a one-click automated payment-reminder flow, show it to 20 of those users, and 15 say they would pay for it today — that positive signal indicates problem-solution fit.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [],
+      "domains": [
+        "Product Strategy",
+        "User Research",
+        "Growth"
+      ],
+      "concepts": [
+        "Product-Market Fit",
+        "Jobs To Be Done",
+        "Continuous Discovery",
+        "MVP",
+        "Customer Development",
+        "Lean Startup"
+      ]
+    }
+  },
+  {
+    "term": "Product Development Cycle",
+    "category": "Product Strategy",
+    "what": "The end-to-end process of taking a product from initial idea through research, design, build, launch, and iteration. It defines how a team moves from problem discovery to a shipped solution and back again.",
+    "why": "Having a shared, structured cycle prevents teams from skipping critical steps (like validation before building), aligns cross-functional stakeholders, and creates a repeatable system for delivering value consistently.",
+    "example": "A fintech team follows a 6-stage cycle: Discover (user interviews reveal pain with expense tracking) → Define (scope an MVP receipt-scanning feature) → Design (wireframes + usability tests) → Develop (engineering sprints) → Launch (phased rollout to 10% of users) → Learn (retention metrics + NPS inform next cycle).",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Jira",
+        "Linear",
+        "Productboard",
+        "Notion",
+        "Figma"
+      ],
+      "domains": [
+        "Product Management",
+        "Agile & Process",
+        "UX Design",
+        "Go-to-Market Strategy"
+      ],
+      "concepts": [
+        "MVP",
+        "Dual-track Agile",
+        "Jobs-to-be-Done",
+        "Sprint Planning",
+        "Product-Market Fit"
+      ]
+    }
+  },
+  {
+    "term": "Product-led Growth Funnel",
+    "category": "Growth",
+    "what": "A user acquisition and conversion framework where the product itself — rather than sales or marketing teams — is the primary driver of discovery, activation, retention, and expansion.",
+    "why": "It lowers customer acquisition cost, shortens time-to-value, and creates a compounding growth loop as satisfied users organically invite others or upgrade themselves.",
+    "example": "Figma lets users sign up for free, collaborate on a real design file, and naturally pull in teammates — each new collaborator becomes a potential paid seat, all without a salesperson involved until an enterprise deal closes.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Product Strategy",
+      "Agile & Process"
+    ],
+    "related": {
+      "platforms": [
+        "Slack",
+        "Figma",
+        "Notion",
+        "Dropbox",
+        "Calendly"
+      ],
+      "domains": [
+        "Product Strategy",
+        "Metrics & Analytics",
+        "User Research"
+      ],
+      "concepts": [
+        "Freemium Model",
+        "Viral Loop",
+        "Activation Rate",
+        "Time-to-Value",
+        "PQL (Product Qualified Lead)",
+        "Bottom-up SaaS",
+        "North Star Metric",
+        "Onboarding Optimization"
+      ]
+    }
+  },
+  {
+    "term": "Product-Market Fit",
+    "category": "Product Strategy",
+    "what": "Product-market fit (PMF) is the degree to which a product satisfies a strong market demand — meaning the right product has been built for the right audience and they are actively using and retaining it.",
+    "why": "PMF is the foundational milestone every early-stage product must achieve before scaling, because investing heavily in growth before PMF wastes resources on something the market doesn't truly want.",
+    "example": "A B2B SaaS team launches a project-management tool and surveys users: 42% say they would be 'very disappointed' if the product disappeared (above the 40% PMF benchmark). Churn is low, NPS is high, and sales cycles are shortening — the team concludes they have PMF.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Growth",
+      "Agile & Process",
+      "Metrics & Analytics"
+    ],
+    "related": {
+      "platforms": [
+        "Typeform",
+        "Mixpanel",
+        "Amplitude",
+        "Superhuman"
+      ],
+      "domains": [
+        "Growth",
+        "User Research",
+        "Metrics & Analytics"
+      ],
+      "concepts": [
+        "Retention Curve",
+        "Net Promoter Score (NPS)",
+        "Sean Ellis PMF Survey",
+        "Jobs-to-be-Done",
+        "Churn Rate",
+        "Ideal Customer Profile (ICP)",
+        "Value Proposition",
+        "Minimum Viable Product (MVP)"
+      ]
+    }
+  },
+  {
+    "term": "QA (Quality Assurance)",
+    "category": "Agile & Process",
+    "what": "QA is the practice of systematically verifying that software meets defined standards and requirements before it reaches users — covering testing, bug reporting, and process oversight.",
+    "why": "It catches defects early when they're cheap to fix, builds confidence in releases, and ensures the product behaves as users and stakeholders expect across different conditions.",
+    "example": "A QA engineer on an e-commerce team writes test cases for the checkout flow: 'Given a user with an expired credit card, when they click Pay, then they should see a clear error message — not a 500 page.' They run this manually and automate it in Cypress so it runs on every pull request.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Cypress",
+        "Selenium",
+        "Jest",
+        "Postman",
+        "TestRail"
+      ],
+      "domains": [
+        "Software Testing",
+        "Release Management",
+        "Agile & Process",
+        "DevOps"
+      ],
+      "concepts": [
+        "Unit Testing",
+        "Integration Testing",
+        "Regression Testing",
+        "Test-Driven Development (TDD)",
+        "Continuous Integration (CI)"
+      ]
+    }
+  },
+  {
+    "term": "React",
+    "category": "Frontend",
+    "what": "React is a JavaScript library developed by Meta for building user interfaces by composing reusable components, each managing its own state and rendering logic. It updates the UI efficiently by comparing a virtual representation of the DOM against the real one and applying only the necessary changes.",
+    "why": "React's component model makes large UIs easier to build, reason about, and maintain. Its massive ecosystem, strong community, and compatibility with React Native for mobile development make it a common default for modern frontend projects.",
+    "example": "function Counter() {\n  const [count, setCount] = React.useState(0);\n  return (\n    <button onClick={() => setCount(count + 1)}>\n      Clicked {count} times\n    </button>\n  );\n}\n// Each click updates only this component, not the whole page.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Next.js",
+        "Remix",
+        "Vite",
+        "React Native",
+        "Storybook"
+      ],
+      "domains": [
+        "Frontend Development",
+        "Component Architecture",
+        "Single-Page Applications",
+        "Cross-Platform Mobile"
+      ],
+      "concepts": [
+        "Virtual DOM",
+        "JSX",
+        "Component State",
+        "Props",
+        "Hooks"
+      ]
+    }
+  },
+  {
+    "term": "Refactoring",
+    "category": "General CS",
+    "what": "Refactoring is the process of restructuring existing code to improve its readability, maintainability, or performance without changing its external behavior or functionality.",
+    "why": "It matters because codebases accumulate complexity over time ('technical debt'), and regular refactoring keeps code easier to understand, test, and extend — reducing bugs and onboarding friction.",
+    "example": "A function named 'doStuff()' that fetches user data, formats it, and saves it to a database gets split into three clearly named functions: fetchUser(), formatUserData(), and saveUser(). The app behaves identically, but the code is far easier to reason about and test independently.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "ReSharper",
+        "IntelliJ IDEA",
+        "VS Code",
+        "SonarQube",
+        "ESLint"
+      ],
+      "domains": [
+        "Software design",
+        "Code quality",
+        "Technical debt management",
+        "Test-driven development"
+      ],
+      "concepts": [
+        "Technical debt",
+        "Code smell",
+        "DRY principle",
+        "Separation of concerns",
+        "Unit testing"
+      ]
+    }
+  },
+  {
+    "term": "Schema / Data Model",
+    "category": "Database",
+    "what": "A schema (or data model) is a formal blueprint that defines how data is structured — what fields exist, what types they hold, and how different pieces of data relate to each other. It's the agreed-upon 'shape' of your data before (or sometimes as) it's stored.",
+    "why": "A well-designed schema prevents inconsistent or corrupt data, makes queries predictable, and serves as a shared contract between frontend, backend, and data teams so everyone works from the same understanding of the data.",
+    "example": "A 'users' table schema might specify: id (integer, primary key), email (varchar, unique, not null), created_at (timestamp). Any row that violates these rules — like a missing email — gets rejected at the database level. In a NoSQL context like MongoDB, a Mongoose schema enforces the same constraints in application code instead.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "AI/ML — 'schema' in the context of LLM structured outputs or JSON Schema means a machine-readable spec that constrains what a model is allowed to generate",
+      "API/Protocol — in GraphQL, the schema is the entire type system defining what queries and mutations clients can make, acting as a contract between client and server"
+    ],
+    "related": {
+      "platforms": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB (Mongoose)",
+        "Prisma",
+        "dbt"
+      ],
+      "domains": [
+        "Data modeling",
+        "Database design",
+        "API contracts",
+        "Data governance"
+      ],
+      "concepts": [
+        "Normalization",
+        "Foreign keys & relationships",
+        "Migrations",
+        "Entity-Relationship (ER) diagrams",
+        "Type systems"
+      ]
+    }
+  },
+  {
+    "term": "spec",
+    "category": "Agile & Process",
+    "what": "A spec (specification) is a written document that describes what a feature, system, or product should do — covering requirements, behavior, constraints, and acceptance criteria before or during development.",
+    "why": "Specs align teams (product, engineering, design) on what to build and why, reducing costly misunderstandings, scope creep, and rework. They serve as a reference throughout implementation and QA.",
+    "example": "A product spec for a 'Forgot Password' flow might include: trigger (user clicks link), input (email field), behavior (send reset email within 30s, show generic success message regardless of whether email exists), edge cases (rate-limit to 3 requests/hour), and out-of-scope items (social login recovery).",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Dev — in engineering contexts, a 'spec' often refers to a technical design doc or RFC describing architecture, APIs, or data models rather than user-facing behavior",
+      "AI — in testing/evals, 'spec' can refer to a behavioral specification used to define expected model outputs or constraints"
+    ],
+    "related": {
+      "platforms": [
+        "Notion",
+        "Confluence",
+        "Linear",
+        "Jira",
+        "Google Docs"
+      ],
+      "domains": [
+        "Product Management",
+        "Agile & Process",
+        "Software Requirements",
+        "QA & Testing"
+      ],
+      "concepts": [
+        "PRD (Product Requirements Document)",
+        "RFC",
+        "acceptance criteria",
+        "user story",
+        "technical design doc"
+      ]
+    }
+  },
+  {
+    "term": "Staging Environment",
+    "category": "DevOps",
+    "what": "A staging environment is a near-identical replica of the production system used to test changes before they go live. It mirrors production infrastructure, data shapes, and integrations so that testing reflects real-world behavior.",
+    "why": "It acts as a final safety net to catch bugs, integration failures, or performance regressions that weren't caught in development or QA — reducing the risk of breaking production for real users.",
+    "example": "A team merges a new checkout flow into the 'staging' branch. The CI/CD pipeline deploys it to staging.myapp.com, which connects to a copy of the production database and the real Stripe sandbox API. QA runs end-to-end tests there. Only after sign-off does the code get promoted to production.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "GitHub Actions",
+        "Vercel",
+        "Heroku",
+        "AWS Elastic Beanstalk",
+        "Railway"
+      ],
+      "domains": [
+        "CI/CD",
+        "Software Release Management",
+        "Quality Assurance",
+        "Infrastructure"
+      ],
+      "concepts": [
+        "Production Environment",
+        "Feature Flags",
+        "Blue-Green Deployment",
+        "Environment Parity",
+        "Canary Release"
+      ]
+    }
+  },
+  {
+    "term": "Statistical Power",
+    "category": "Metrics & Analytics",
+    "what": "Statistical power is the probability that a test will correctly detect a true effect (i.e., reject a false null hypothesis), typically expressed as 1 minus the false-negative rate (1 − β).",
+    "why": "Understanding power is critical when designing experiments to ensure your sample size is large enough to detect meaningful differences — running underpowered tests leads to inconclusive results and wasted effort.",
+    "example": "A product team wants to detect a 5% lift in conversion rate. Using a power analysis, they calculate they need 10,000 users per variant to achieve 80% power at a 0.05 significance level. Running with only 2,000 users per variant would leave them with insufficient power.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Machine Learning",
+      "User Research",
+      "General CS"
+    ],
+    "related": {
+      "platforms": [
+        "Optimizely",
+        "Statsig",
+        "Evan Miller's Sample Size Calculator"
+      ],
+      "domains": [
+        "Experimentation",
+        "A/B Testing",
+        "Hypothesis Testing",
+        "Frequentist Statistics"
+      ],
+      "concepts": [
+        "p-value",
+        "significance level (alpha)",
+        "Type II Error (false negative)",
+        "effect size",
+        "sample size",
+        "confidence interval",
+        "multiple testing correction"
+      ]
+    }
+  },
+  {
+    "term": "statistical significance",
+    "category": "Metrics & Analytics",
+    "what": "A result is statistically significant when the probability that it occurred by random chance alone falls below a chosen threshold (typically p < 0.05). It is a formal way of deciding whether an observed difference between groups is likely real rather than noise.",
+    "why": "It prevents teams from shipping product changes based on flukes; without it, you might roll out a feature that appeared to lift conversion but actually had no effect.",
+    "example": "You run an A/B test on a checkout button color: variant B shows a 3% higher conversion rate. After collecting 10,000 sessions per arm you calculate p = 0.03, which is below your 0.05 threshold, so you declare the result statistically significant and ship variant B.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "General CS",
+      "User Research",
+      "Machine Learning"
+    ],
+    "related": {
+      "platforms": [
+        "Optimizely",
+        "Statsig",
+        "LaunchDarkly",
+        "Google Optimize"
+      ],
+      "domains": [
+        "A/B Testing",
+        "Experimentation",
+        "Product Analytics"
+      ],
+      "concepts": [
+        "p-value",
+        "null hypothesis",
+        "confidence interval",
+        "statistical power",
+        "Type I error",
+        "Type II error",
+        "sample size calculation",
+        "effect size"
+      ]
+    }
+  },
+  {
+    "term": "Technical Debt",
+    "category": "Architecture",
+    "what": "The accumulated cost of shortcuts, quick fixes, and suboptimal design decisions made during development that will require extra work to clean up later. Like financial debt, it accrues 'interest' over time as the codebase becomes harder to change.",
+    "why": "Understanding technical debt helps teams make conscious trade-offs between speed now and maintainability later — and helps justify refactoring work to non-technical stakeholders.",
+    "example": "A team hardcodes a payment provider's API key directly in the source code to ship faster. It works, but now every future developer must know to change it, it's a security risk, and switching providers requires hunting through the codebase. The cleanup cost — extracting it to a secrets manager, auditing exposure, updating docs — is the debt coming due.",
+    "depth": "foundational",
+    "alternativeDomains": [
+      "Product"
+    ],
+    "related": {
+      "platforms": [
+        "SonarQube",
+        "CodeClimate",
+        "Jira",
+        "Linear",
+        "Backstage"
+      ],
+      "domains": [
+        "Software architecture",
+        "Engineering management",
+        "Refactoring",
+        "Agile planning"
+      ],
+      "concepts": [
+        "Refactoring",
+        "Code smell",
+        "Entropy",
+        "Broken windows theory",
+        "Definition of Done"
+      ]
+    }
+  },
+  {
+    "term": "Technology Adoption Curve",
+    "category": "Product Strategy",
+    "what": "A bell-curve model that segments users into five groups — Innovators, Early Adopters, Early Majority, Late Majority, and Laggards — based on how quickly they embrace a new technology or product.",
+    "why": "It helps product and go-to-market teams tailor messaging, pricing, and features to the right audience at each stage of growth, and anticipate where adoption will slow or accelerate.",
+    "example": "A developer tools startup sees strong traction with Innovators (indie hackers) and Early Adopters (CTOs at startups), but growth stalls before hitting the Early Majority (mid-market engineering managers). This 'chasm' signals the product needs better onboarding, case studies, and enterprise-ready reliability before crossing into mainstream adoption.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Gartner Hype Cycle",
+        "Crossing the Chasm (Geoffrey Moore)",
+        "ProductPlan",
+        "Amplitude",
+        "Pragmatic Institute"
+      ],
+      "domains": [
+        "Go-to-Market Strategy",
+        "Growth & Retention",
+        "Market Segmentation",
+        "Product Lifecycle Management"
+      ],
+      "concepts": [
+        "The Chasm",
+        "Product-Market Fit",
+        "Early Adopter Strategy",
+        "Network Effects",
+        "Diffusion of Innovations"
+      ]
+    }
+  },
+  {
+    "term": "Transformer",
+    "category": "Deep Learning",
+    "what": "A neural network architecture built entirely on self-attention mechanisms, introduced in the 2017 paper 'Attention Is All You Need,' that processes input tokens in parallel rather than sequentially.",
+    "why": "Transformers replaced RNNs and LSTMs as the dominant architecture for sequence modeling because they parallelize training efficiently on GPUs and capture long-range dependencies far more effectively.",
+    "example": "When you type a sentence into a translation model, the Transformer's self-attention heads simultaneously compare every word against every other word to understand context — so 'bank' in 'river bank' vs. 'savings bank' is disambiguated before any output token is generated.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "LLMs & Gen AI",
+      "Machine Learning"
+    ],
+    "related": {
+      "platforms": [
+        "PyTorch",
+        "TensorFlow",
+        "JAX",
+        "Hugging Face Transformers",
+        "ONNX"
+      ],
+      "domains": [
+        "LLMs & Gen AI",
+        "MLOps",
+        "Deep Learning"
+      ],
+      "concepts": [
+        "Self-Attention",
+        "Multi-Head Attention",
+        "Positional Encoding",
+        "BERT",
+        "GPT",
+        "Encoder-Decoder Architecture",
+        "Tokenization",
+        "Fine-Tuning",
+        "Embeddings",
+        "Softmax"
+      ]
+    }
+  },
+  {
+    "term": "Two-Sided Marketplace",
+    "category": "Product Strategy",
+    "what": "A platform business model that connects two distinct user groups who create value for each other — such as buyers and sellers, riders and drivers, or hosts and guests.",
+    "why": "Understanding this model is critical because it creates a 'chicken-and-egg' problem at launch, requires separate acquisition and retention strategies per side, and exhibits network effects that can make the platform extremely defensible once scaled.",
+    "example": "Airbnb must simultaneously attract hosts (supply) and travelers (demand). A new city launch means recruiting local hosts before travelers have a reason to visit — Airbnb solves this by subsidizing supply first with free photography to hosts.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Economics",
+      "Entrepreneurship",
+      "Growth"
+    ],
+    "related": {
+      "platforms": [
+        "Airbnb",
+        "Uber",
+        "eBay",
+        "Upwork",
+        "Stripe Connect"
+      ],
+      "domains": [
+        "Growth",
+        "Metrics & Analytics",
+        "Architecture"
+      ],
+      "concepts": [
+        "Network Effects",
+        "Cold Start Problem",
+        "Liquidity",
+        "Take Rate",
+        "Single-Sided Marketplace",
+        "Platform Business Model",
+        "Disintermediation"
+      ]
+    }
+  },
+  {
+    "term": "Voice of the Customer (VoC)",
+    "category": "User Research",
+    "what": "Voice of the Customer is a research process for capturing customers' expectations, preferences, and aversions by collecting direct and indirect feedback across interviews, surveys, support tickets, reviews, and usage data.",
+    "why": "VoC keeps product decisions grounded in real user needs rather than internal assumptions, reducing the risk of building features nobody wants and increasing the likelihood of achieving product-market fit.",
+    "example": "A SaaS team notices high churn after month two. They run exit surveys, analyze support transcripts, and conduct five user interviews. VoC synthesis reveals customers can't connect their CRM — the team prioritizes a native integration, and 90-day retention improves by 18%.",
+    "depth": "intermediate",
+    "alternativeDomains": [
+      "Product Strategy",
+      "Metrics & Analytics",
+      "Growth"
+    ],
+    "related": {
+      "platforms": [
+        "Qualtrics",
+        "Medallia",
+        "Typeform",
+        "Zendesk",
+        "Dovetail",
+        "Intercom"
+      ],
+      "domains": [
+        "Customer Experience (CX)",
+        "Product Management",
+        "UX Research",
+        "Market Research"
+      ],
+      "concepts": [
+        "Net Promoter Score (NPS)",
+        "Customer Satisfaction Score (CSAT)",
+        "Jobs-to-be-Done (JTBD)",
+        "Affinity Mapping",
+        "Customer Journey Mapping",
+        "Churn Analysis"
+      ]
+    }
+  },
+  {
+    "term": "Web APIs",
+    "category": "API/Protocol",
+    "what": "Web APIs are interfaces exposed over HTTP/HTTPS that allow software systems to communicate by sending and receiving structured data (typically JSON or XML). They define the endpoints, methods, and data formats that clients use to request or manipulate resources on a server.",
+    "why": "They are the backbone of modern software integration, enabling frontend apps, mobile clients, and third-party services to interact with backend systems in a standardized, platform-agnostic way.",
+    "example": "A weather app sends a GET request to 'https://api.weather.com/v1/forecast?city=NYC' and receives a JSON response with temperature and conditions — no knowledge of the server's internals required.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "REST",
+        "GraphQL",
+        "gRPC",
+        "OpenAPI/Swagger",
+        "Postman"
+      ],
+      "domains": [
+        "Backend",
+        "Frontend",
+        "Architecture",
+        "Networking"
+      ],
+      "concepts": [
+        "REST",
+        "HTTP Methods",
+        "Authentication (OAuth, API Keys)",
+        "Rate Limiting",
+        "Webhooks",
+        "CORS",
+        "JSON",
+        "Endpoints"
+      ]
+    }
+  },
+  {
+    "term": "Wireframe",
+    "category": "User Research",
+    "what": "A wireframe is a low-fidelity, schematic visual guide that represents the skeletal structure of a digital interface, showing layout, content hierarchy, and functionality without color, typography, or final design details.",
+    "why": "Wireframes allow teams to rapidly explore and validate layout decisions and user flows early in the design process, before investing time in high-fidelity visuals or development.",
+    "example": "Before building a checkout flow, a product designer creates a wireframe in Figma showing placeholder boxes for the cart summary, address form fields, and a CTA button — stakeholders review and approve the layout before any pixel-perfect design begins.",
+    "depth": "foundational",
+    "alternativeDomains": [],
+    "related": {
+      "platforms": [
+        "Figma",
+        "Balsamiq",
+        "Sketch",
+        "Miro",
+        "Whimsical"
+      ],
+      "domains": [
+        "Product Strategy",
+        "Agile & Process"
+      ],
+      "concepts": [
+        "Mockup",
+        "Prototype",
+        "User Flow",
+        "Information Architecture",
+        "Lo-Fi Design",
+        "Design Thinking"
+      ]
+    }
+  }
+]
