@@ -1,3 +1,5 @@
+Updated June 2026
+
 # Dev, AI & Product — Concept Dictionary
 
 **🌐 Live:** [concept-dictionary.vercel.app](https://concept-dictionary.vercel.app)
