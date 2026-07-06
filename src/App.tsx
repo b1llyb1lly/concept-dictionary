@@ -148,42 +148,60 @@ function setStoredApiKey(key) {
 
 // ── API helpers ─────────────────────────────────────────────────
 
+// Extract a JSON object from a model reply that may be fenced or have stray
+// text around it. Falls back to slicing the outermost { … } so a bit of
+// preamble or a trailing note doesn't break parsing.
+function parseJsonObject(text) {
+  const cleaned = text.replace(/```json|```/g,"").trim();
+  try { return JSON.parse(cleaned); } catch(e) {}
+  const start = cleaned.indexOf("{"), end = cleaned.lastIndexOf("}");
+  if (start !== -1 && end > start) return JSON.parse(cleaned.slice(start, end+1));
+  throw new Error("Couldn't parse the model's JSON response.");
+}
+
 async function callClaude(system, messages, maxTokens, timeoutMs) {
   const apiKey = getApiKey();
   if (!apiKey) throw new Error("Add your Anthropic API key in Settings to enable live lookups.");
-  const controller = new AbortController();
-  const timeout = setTimeout(function(){ controller.abort(); }, timeoutMs||60000);
-  let res;
-  try {
-    res = await fetch("https://api.anthropic.com/v1/messages", {
-      method:"POST", headers:{"Content-Type":"application/json","x-api-key":apiKey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
-      body:JSON.stringify({ model:MODEL, max_tokens:maxTokens||1500, system, messages }),
-      signal: controller.signal
-    });
-  } catch(e) {
+  // Retry once on rate-limit (429) or overload (529), which are common on
+  // lower API tiers when several requests fire at once (concept + suggestions + diagram).
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(function(){ controller.abort(); }, timeoutMs||60000);
+    let res;
+    try {
+      res = await fetch("https://api.anthropic.com/v1/messages", {
+        method:"POST", headers:{"Content-Type":"application/json","x-api-key":apiKey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
+        body:JSON.stringify({ model:MODEL, max_tokens:maxTokens||1500, system, messages }),
+        signal: controller.signal
+      });
+    } catch(e) {
+      clearTimeout(timeout);
+      throw new Error(e.name === "AbortError" ? "Request timed out" : "Network error: "+(e.message||e));
+    }
     clearTimeout(timeout);
-    throw new Error(e.name === "AbortError" ? "Request timed out" : "Network error: "+(e.message||e));
+    if ((res.status === 429 || res.status === 529) && attempt === 0) {
+      await new Promise(r => setTimeout(r, 4000));
+      continue;
+    }
+    let data;
+    try { data = await res.json(); } catch(e) { throw new Error("Couldn't parse response (status "+res.status+")"); }
+    if (!res.ok) throw new Error(data?.error?.message || "HTTP "+res.status);
+    const block = data.content?.find(b => b.type==="text");
+    if (!block?.text) throw new Error("Empty response from API");
+    return block.text;
   }
-  clearTimeout(timeout);
-  let data;
-  try { data = await res.json(); } catch(e) { throw new Error("Couldn't parse response (status "+res.status+")"); }
-  if (!res.ok) throw new Error(data?.error?.message || "HTTP "+res.status);
-  const block = data.content?.find(b => b.type==="text");
-  if (!block?.text) throw new Error("Empty response from API");
-  return block.text;
+  throw new Error("Rate limited — please wait a moment and try again.");
 }
 
 async function fetchConcept(term) {
   const text = await callClaude(SYSTEM, [{role:"user",content:term}], 1500);
-  return JSON.parse(text.replace(/```json|```/g,"").trim());
+  return parseJsonObject(text);
 }
 
 async function fetchSuggestionsAPI(term) {
-  try {
-    const text = await callClaude(SUGGEST_SYSTEM, [{role:"user",content:"I just learned about: "+term}], 600);
-    const parsed = JSON.parse(text.replace(/```json|```/g,"").trim());
-    return parsed.suggestions || [];
-  } catch(e) { return []; }
+  const text = await callClaude(SUGGEST_SYSTEM, [{role:"user",content:"I just learned about: "+term}], 1500);
+  const parsed = parseJsonObject(text);
+  return parsed.suggestions || [];
 }
 
 function extractSvg(raw) {
