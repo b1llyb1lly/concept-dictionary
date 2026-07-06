@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import * as d3 from "d3";
 import seedConcepts from "./concepts.json";
 
-const MODEL = "claude-sonnet-4-20250514";
+const MODEL = "claude-sonnet-5";
 
 const SYSTEM = `You are a concise technical, product, and AI educator. When given a development, product management, or AI/ML term or concept, respond ONLY with a JSON object (no markdown fences) in this exact shape:
 {
