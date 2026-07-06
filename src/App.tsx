@@ -4,13 +4,13 @@ import seedConcepts from "./concepts.json";
 
 const MODEL = "claude-sonnet-5";
 
-const SYSTEM = `You are a concise technical, product, and AI educator. When given a development, product management, or AI/ML term or concept, respond ONLY with a JSON object (no markdown fences) in this exact shape:
+const SYSTEM = `You are a knowledgeable technical, product, and AI educator who explains concepts thoroughly. When given a development, product management, or AI/ML term or concept, respond ONLY with a JSON object (no markdown fences) in this exact shape:
 {
   "term": "<normalized term name>",
   "category": "<one of: Frontend, Backend, DevOps, Database, Networking, Security, Architecture, Language/Runtime, Tooling, API/Protocol, General CS, Product Strategy, User Research, Metrics & Analytics, Growth, Agile & Process, Machine Learning, Deep Learning, LLMs & Gen AI, MLOps>",
-  "what": "<1-2 sentence plain-English definition>",
-  "why": "<1-2 sentences on why it matters or when you'd use it>",
-  "example": "<a concrete, realistic mini-example — code snippet, analogy, or scenario>",
+  "what": "<3-5 sentence plain-English definition. Explain what it is, how it works at a high level, and the key mechanism or distinction that makes it what it is. Define any sub-terms you introduce.>",
+  "why": "<3-4 sentences on why it matters, specifically when and where you'd use it, the concrete benefits, and the risks or costs of getting it wrong or ignoring it.>",
+  "example": "<a detailed, realistic worked example — a code snippet with brief explanation, a step-by-step scenario, or a concrete analogy. Walk through it enough that the reader sees the concept in action, not just a one-liner.>",
   "depth": "<one of: foundational, intermediate, advanced, expert>",
   "alternativeDomains": ["<names of other high-level domains — Dev, AI, or Product — where this exact term carries a MEANINGFULLY DIFFERENT definition. Leave empty [] if the term has one clear primary meaning>"],
   "related": {
@@ -19,7 +19,7 @@ const SYSTEM = `You are a concise technical, product, and AI educator. When give
     "concepts": ["<up to 5 closely related technical concepts worth knowing alongside this one>"]
   }
 }
-Be precise but accessible. Avoid jargon in the 'what' field. The example should be practical. Depth guide — foundational: core concept any practitioner should know; intermediate: used regularly in day-to-day work; advanced: requires solid experience to fully apply; expert: deep specialization or niche knowledge.`;
+Be thorough and detailed while staying accessible — aim to genuinely teach the concept, not just define it. Avoid unexplained jargon in the 'what' field. The example must be concrete and practical. Keep every field valid JSON (escape quotes and newlines). Depth guide — foundational: core concept any practitioner should know; intermediate: used regularly in day-to-day work; advanced: requires solid experience to fully apply; expert: deep specialization or niche knowledge.`;
 
 const SUGGEST_SYSTEM = `You are a technical learning advisor. Given a concept someone just learned, suggest exactly 4 concepts to understand next for full technical fluency. Return ONLY a JSON object (no markdown fences):
 {
@@ -194,7 +194,7 @@ async function callClaude(system, messages, maxTokens, timeoutMs) {
 }
 
 async function fetchConcept(term) {
-  const text = await callClaude(SYSTEM, [{role:"user",content:term}], 1500);
+  const text = await callClaude(SYSTEM, [{role:"user",content:term}], 3500);
   return parseJsonObject(text);
 }
 
