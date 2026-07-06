@@ -200,9 +200,14 @@ async function fetchDiagram(term, concept) {
   const text = await callClaude(
     DIAGRAM_SYSTEM,
     [{role:"user", content:"Term: "+term+"\nCategory: "+(concept?.category||"")+"\nDefinition: "+(concept?.what||"")}],
-    4000
+    8000
   );
-  return extractSvg(text);
+  const svg = extractSvg(text);
+  // extractSvg returns null when the response has no complete <svg>…</svg>
+  // (usually a truncated or malformed reply). Surface it as an error so the
+  // UI shows a Retry button instead of silently rendering a blank space.
+  if (!svg) throw new Error("The model didn't return a complete diagram. Tap Retry.");
+  return svg;
 }
 
 async function fetchAnswer(term, conceptData, question, history) {
