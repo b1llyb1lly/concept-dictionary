@@ -45,7 +45,8 @@ SVG rules:
 - Text: #1e293b on light fills, #ffffff on dark; font-family="system-ui,sans-serif"; font-size 11-13
 - Arrows: reusable <marker> in <defs>
 - Shapes: rounded rects rx="8", circles
-- Short title top-left, font-size 11, fill #94a3b8`;
+- Short title top-left, font-size 11, fill #94a3b8
+- Keep it compact so it renders fast: round all coordinates to whole integers, avoid long decimal path data, and limit the diagram to the essential elements (aim for well under 40 shapes).`;
 
 const CATEGORY_COLORS = {
   "Frontend":"#3b82f6","Backend":"#8b5cf6","DevOps":"#f59e0b","Database":"#10b981",
@@ -147,11 +148,11 @@ function setStoredApiKey(key) {
 
 // ── API helpers ─────────────────────────────────────────────────
 
-async function callClaude(system, messages, maxTokens) {
+async function callClaude(system, messages, maxTokens, timeoutMs) {
   const apiKey = getApiKey();
   if (!apiKey) throw new Error("Add your Anthropic API key in Settings to enable live lookups.");
   const controller = new AbortController();
-  const timeout = setTimeout(function(){ controller.abort(); }, 60000);
+  const timeout = setTimeout(function(){ controller.abort(); }, timeoutMs||60000);
   let res;
   try {
     res = await fetch("https://api.anthropic.com/v1/messages", {
@@ -200,7 +201,8 @@ async function fetchDiagram(term, concept) {
   const text = await callClaude(
     DIAGRAM_SYSTEM,
     [{role:"user", content:"Term: "+term+"\nCategory: "+(concept?.category||"")+"\nDefinition: "+(concept?.what||"")}],
-    8000
+    6000,
+    120000
   );
   const svg = extractSvg(text);
   // extractSvg returns null when the response has no complete <svg>…</svg>
