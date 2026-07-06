@@ -433,17 +433,13 @@ function ConceptCard({ data, onSave, onLookupRelated, onSaveRelated, savedTerms,
   const hasRelated = RELATED_GROUPS.some(g => { const a=rel[g.key]; return a&&a.length>0; });
   const accent = CATEGORY_COLORS[data.category] || "#64748b";
 
+  // Reset the diagram when the concept changes; the diagram is generated
+  // on demand (via the Generate button) so the card isn't blocked waiting on it.
   useEffect(function() {
-    if (compact || !open) return;
-    let cancelled = false;
-    setDiagram(null); setDiagramLoading(true); setDiagramError(null);
-    fetchDiagram(data.term, data)
-      .then(svg => { if (!cancelled) { setDiagram(svg); setDiagramLoading(false); } })
-      .catch(err => { if (!cancelled) { setDiagramError(err.message||"Error"); setDiagramLoading(false); } });
-    return () => { cancelled = true; };
-  }, [data.term, compact, open]);
+    setDiagram(null); setDiagramLoading(false); setDiagramError(null);
+  }, [data.term]);
 
-  async function retryDiagram() {
+  async function generateDiagram() {
     setDiagramError(null); setDiagram(null); setDiagramLoading(true);
     try { setDiagram(await fetchDiagram(data.term, data)); }
     catch(e) { setDiagramError(e.message||"Error"); }
@@ -482,12 +478,21 @@ function ConceptCard({ data, onSave, onLookupRelated, onSaveRelated, savedTerms,
                 </div>
               )}
               {!diagramLoading && diagram && <DiagramDisplay html={diagram}/>}
+              {!diagramLoading && !diagram && !diagramError && (
+                <button onClick={generateDiagram} style={{ width:"100%", borderRadius:8,
+                  border:"1px dashed "+accent+"66", background:accent+"08", padding:"16px 14px",
+                  display:"flex", alignItems:"center", justifyContent:"center", gap:8, cursor:"pointer" }}>
+                  <i className="ti ti-chart-dots-3" style={{ fontSize:17, color:accent }} aria-hidden="true"/>
+                  <span style={{ fontSize:13, fontWeight:600, color:accent }}>Generate diagram</span>
+                  <span style={{ fontSize:12, color:"var(--color-text-tertiary)" }}>visual explainer · ~30–60s</span>
+                </button>
+              )}
               {!diagramLoading && !diagram && diagramError && (
                 <div style={{ borderRadius:8, border:"1px solid #ef444430", background:"#ef444408",
                   padding:"10px 14px", display:"flex", alignItems:"center", gap:10 }}>
                   <i className="ti ti-alert-triangle" style={{ fontSize:15, color:"#ef4444" }} aria-hidden="true"/>
                   <span style={{ fontSize:12, color:"var(--color-text-secondary)", flex:1 }}>Diagram error: {diagramError}</span>
-                  <button onClick={retryDiagram} style={{ fontSize:12, fontWeight:500, padding:"4px 10px",
+                  <button onClick={generateDiagram} style={{ fontSize:12, fontWeight:500, padding:"4px 10px",
                     borderRadius:6, border:"1px solid #ef444455", background:"#ef444415",
                     color:"#ef4444", cursor:"pointer", display:"inline-flex", alignItems:"center", gap:4 }}>
                     <i className="ti ti-refresh" style={{fontSize:11}} aria-hidden="true"/> Retry
